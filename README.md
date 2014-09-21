@@ -28,6 +28,10 @@ The user would need to download the files from this Github repository via the <i
 
 The only required extra R package to install is the <i>plyr</i> package, if the user has not already installed it. 
 
+### <span style="color: brown">Basic Script Description</span>
+
+The analysis script combines the test and training data sets into one master data set, and then changes the feature labels to make it more descriptive. The activity codes were transformed to descriptive activity names. Finally, the raw data is summarized using the average measurement under each subject for each activity, and outputted to a new tidy data set. Detailed comments are found in the <i>run_analysis.R</i> file.
+
 ### <span style="color: brown">Running the Script</span>
 
 To run the script, open an R shell or R Studio. Make sure to set the working directory. For example, on Linux or Mac systems:

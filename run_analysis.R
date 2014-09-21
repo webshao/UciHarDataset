@@ -8,8 +8,10 @@ descActiName <- function(actiCode) {
 
 # Define a function for improving the description of the measurement labels
 moreDescLabel <- function(origLabel) {
+  # Replace BodyBody to Body if it exists
+  newLabel <- gsub("BodyBody", "Body", origLabel)
   # Replace the word Acc with Accelerometer
-  newLabel <- gsub("Acc", "LinAcc", origLabel)
+  newLabel <- gsub("Acc", "LinAcc", newLabel)
   # Replace the word Gyro with Gyroscope
   newLabel <- gsub("Gyro", "AngVel", newLabel)  
   # Replace the prefix t with Time
